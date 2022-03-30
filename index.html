@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Henrique portifolio</title>
 </head>
 
@@ -32,15 +33,15 @@
     <main>
         <section class="container">
             <div class="name">
-                <h1> Henrique onofrio</h1>
+                <h1> Henrique Onofrio</h1>
                 <h5>FullStack Developer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-angles-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="material-icons">arrow_drop_down </i> 
             </div>
 
-            <div id="about">
+            <div style="display:none" id="about">
                 <p>
                     Cursando Ciencia da Computação, conhecimento e estudos na linguem Java com Spring, SQL,
                     HTMl, CSS, e JS e frameWorks React e NodeJS, e desenvolvimento blochain de Etherium, metodologias
@@ -60,6 +61,18 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+        
+    </script>
+
 </body>
 
 </html>
