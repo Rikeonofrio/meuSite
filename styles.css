@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #e6cd5e;
+    font-family: 'Spartan', sans-serif
+}
+
+ul {
+    list-style: none;
+    
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight:900 ;
+}
+
+body{
+    background-image: url(./pexels-roberto-nickson-2478248.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover ;
+    
+}
+
+.container{
+    text-align: center;
+}
+.container .name h1 {
+    font-size: 60px;
+}
+.container .name h5 {
+    font-size: 20px;
+}
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form {
+    width: 40%;
+}
+.form input {
+    width: 50%;
+}
+.form button {
+    width: 15%;
+}
